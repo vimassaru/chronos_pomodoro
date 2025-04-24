@@ -1,5 +1,6 @@
 import { Container } from './components/ui/Container';
-import { Heading } from './components/ui/Heading';
+import { CountDown } from './components/ui/CountDown';
+import { DefaultInput } from './components/ui/DefaultInput';
 import { Logo } from './components/ui/Logo';
 import { Menu } from './components/ui/Menu';
 
@@ -14,6 +15,34 @@ export const App = () => {
       </Container>
       <Container>
         <Menu />
+      </Container>
+      <Container>
+        <CountDown />
+      </Container>
+      <Container>
+        <form className='form' action=''>
+          <div className='formRow'>
+            <DefaultInput
+              labelText='Task'
+              id='input'
+              type='text'
+              placeholder='Digite Algo'
+            />
+          </div>
+
+          <div className='formRow'>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div className='formRow'>
+            <p>Ciclos</p>
+            <p>0 0 0 0 0 0</p>
+          </div>
+
+          <div className='formRow'>
+            <button>Enviar</button>
+          </div>
+        </form>
       </Container>
     </>
   );
