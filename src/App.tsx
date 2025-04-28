@@ -9,6 +9,7 @@ import { Menu } from './components/ui/Menu';
 
 import './styles/global.css';
 import './styles/themes.css';
+import { Footer } from './components/ui/Footer';
 
 export const App = () => {
   return (
@@ -45,6 +46,9 @@ export const App = () => {
             <DefaultButton icon={<PlayCircleIcon />} />
           </div>
         </form>
+      </Container>
+      <Container>
+        <Footer />
       </Container>
     </>
   );
